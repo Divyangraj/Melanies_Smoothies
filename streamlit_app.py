@@ -43,5 +43,5 @@ if ingredients_list:
         session.sql(my_insert_stmt).collect()
         st.success(f'Your smoothie  is ordered,{name_on_order}',icon="✅")
                 
-            fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-            fv_df=st.dataframe(fruityvice_response.json(),use_container_width=True)
+    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+    fv_df=st.dataframe(fruityvice_response.json(),use_container_width=True)
